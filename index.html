@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Hill Climb Racing - Camera Follow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <canvas id="gameCanvas" width="1000" height="500"></canvas>
+        
+        <div class="dashboard">
+            <div class="top-bar">
+                <div class="angle-box">
+                    <span>📐 Angle: <span id="angleValue">0</span>°</span>
+                    <span id="warning" class="warning hidden">⚠️ WARNING!</span>
+                </div>
+                <div class="temp-box">
+                    <span>🌡️ 26°C</span>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-label">🏆 SCORE</span>
+                    <span class="stat-value" id="scoreValue">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">🪙 COINS</span>
+                    <span class="stat-value" id="coinsValue">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">📏 DISTANCE</span>
+                    <span class="stat-value" id="distanceValue">0</span>
+                    <span class="stat-unit">m</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">⚡ BEST</span>
+                    <span class="stat-value" id="bestValue">0</span>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button id="gasBtn" class="btn gas">⛽ GAS (↑)</button>
+                <button id="brakeBtn" class="btn brake">🛑 BRAKE (↓)</button>
+                <button id="resetBtn" class="btn reset">🔄 RESET</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
